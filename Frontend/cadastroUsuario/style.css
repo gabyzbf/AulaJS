@@ -3,9 +3,18 @@
     justify-content: space-between;
 }
 
-body{
+body {
     display: grid;
     justify-content: center;
     align-items: center;
     height: 100vw;
+    background-color: #b287da
+}
+
+h1 {
+    color: #000000;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
