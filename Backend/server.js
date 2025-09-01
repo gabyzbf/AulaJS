@@ -14,6 +14,8 @@ const usuarios = [
     { "id": 2, "nome": "kawã", "idade": 18, "senha": "1708" }
 ]
 
+let newtID = 3;
+
 //request - requisição
 //response - respota
 app.get("/", (request, response) => {
@@ -44,7 +46,7 @@ app.get("/usuarios/:id", (req, res) => {
 app.post("/usuarios", (req, res) => {
     //body - corpo da requisição
     const novoUsuario = req.body;
-    novoUsuario.id = usuarios.length + 1;
+    novoUsuario.id = nexTID++;
     usuarios.push(novoUsuario);
 
     res.status(201).send(novoUsuario)
